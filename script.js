@@ -41,6 +41,8 @@ let isArrowKeyDown = {
     ArrowLeft: false,
     ArrowRight: false
 };
+let touchStartX = 0;
+let touchEndX = 0;
 
 let animationInterval;
 //lumine animation
@@ -119,6 +121,29 @@ function handleKeyUp(e) {
     isScrolling = false;
     toggleGifs();
 }
+function handleTouchStart(e) {
+    touchStartX = e.touches[0].clientX;
+}
+
+function handleTouchMove(e) {
+    touchEndX = e.touches[0].clientX;
+    const touchDelta = touchStartX - touchEndX;
+
+    if (touchDelta > 0) {
+        container.scrollLeft += 10; // Adjust the scrolling speed for touch
+    } else {
+        container.scrollLeft -= 10; // Adjust the scrolling speed for touch
+    }
+
+    e.preventDefault();
+
+    isScrolling = true;
+    toggleGifs();
+    setTimeout(function() {
+        isScrolling = false;
+        toggleGifs();
+    }, 200); // Adjust this value to suit your desired delay
+}
 
 if (document.addEventListener) {
     document.addEventListener('wheel', handleHorizontalScroll);
@@ -130,6 +155,14 @@ if (document.addEventListener) {
     document.attachEvent('onmousewheel', handleHorizontalScroll);
     document.attachEvent('onkeydown', handleArrowKeys);
     document.attachEvent('onkeyup', handleKeyUp);
+}
+if ('ontouchstart' in document.documentElement) {
+    document.addEventListener('touchstart', handleTouchStart, false);
+    document.addEventListener('touchmove', handleTouchMove, false);
+} else {
+    document.addEventListener('wheel', handleHorizontalScroll);
+    document.addEventListener('mousewheel', handleHorizontalScroll);
+    document.addEventListener('DOMMouseScroll', handleHorizontalScroll);
 }
 //verison line graphs
 let verison = ['1.0','1.1','1.2','1.3','1.4','1.5','1.6','2.0','2.1','2.2','2.3','2.4','2.5','2.6','2.7','2.8','3.0','3.1','3.2','3.3','3.4','3.5','3.6','3.7','3.8','4.0']
