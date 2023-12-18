@@ -174,13 +174,15 @@ let verison = ['1.0','1.1','1.2','1.3','1.4','1.5','1.6','2.0','2.1','2.2','2.3'
                 x: {
                     title: {
                         display: true,
-                        text: 'Version Updates'
+                        text: 'Version Updates',
+                        fontStyle: "bold",
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Revenue Generated (in millions)'
+                        text: 'Revenue Generated (in millions)',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -364,13 +366,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'The amount of times a character has made a reapperance'
+                        text: 'The amount of times a character has made a reapperance',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -393,13 +397,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Total revenue a character has made (in millions)'
+                        text: 'Total revenue a character has made (in millions)',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -422,13 +428,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'The amount of times a character has made a reapperance'
+                        text: 'The amount of times a character has made a reapperance',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -451,13 +459,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Total revenue a character has made (in millions)'
+                        text: 'Total revenue a character has made (in millions)',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -480,13 +490,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'The amount of times a character has made a reapperance'
+                        text: 'The amount of times a character has made a reapperance',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -509,13 +521,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Total revenue a character has made (in millions)'
+                        text: 'Total revenue a character has made (in millions)',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -538,13 +552,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Avarage Spiral Abyss usuage rate of each character (in percentage)'
+                        text: 'Avarage Spiral Abyss usuage rate of each character (in percentage)',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -567,13 +583,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Avarage Spiral Abyss usuage rate of each character (in percentage)'
+                        text: 'Avarage Spiral Abyss usuage rate of each character (in percentage)',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -596,13 +614,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Total revenue a character has made (in millions)'
+                        text: 'Total revenue a character has made (in millions)',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -625,13 +645,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Avarage Spiral Abyss usuage rate of each character (in percentage)'
+                        text: 'Avarage Spiral Abyss usuage rate of each character (in percentage)',
+                        fontStyle: "bold"
                     }
                 }
             }
@@ -654,13 +676,15 @@ let charbg = [
                 x: {
                     title: {
                         display: true,
-                        text: 'Character name'
+                        text: 'Character name',
+                        fontStyle: "bold"
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Total revenue a character has made (in millions)'
+                        text: 'Total revenue a character has made (in millions)',
+                        fontStyle: "bold"
                     }
                 }
             }
