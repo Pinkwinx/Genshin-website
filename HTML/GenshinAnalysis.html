@@ -8,6 +8,10 @@
     <title>Genshin Data Analysis</title>
 </head>
 <body>
+    <!--If phone is in portrait mode-->
+    <div class="portrait-message">
+        <p>Please rotate your phone to landscape mode for better experience.</p>
+      </div>
     <div class="title">
         <button class="title-button" id="click">
             <h1>Click to start adventure</h1>
@@ -17,110 +21,130 @@
     </div>
 <div class="container invisible" id="custom-animation">
 <div class="horizontal">
-    <!--Introduction-->
-    <p class="first-line">
-        Welcome, travellers, to the amazing world of Teyvat! Today we'll journey through this land, and explore how the limited 5-star characters in Genshin Impact affect the game's banner sales.
-    </p>
-    <p>
-        So let’s find some more ways that Hoyoverse (the creator of Genshin Impact) can maximize their profit even more from their character banners, by looking at all the 5-star character banners and spiral abyss patterns to see what it tells us, even though they make millions a month already.
-    </p>
-    <!--How revenue correlates with how many times a character has made an appearance-->
-    <p>
-        Did you know that on avarage each character banner makes roughly around $18.3 million, while only lasting for 20 days? That's a lot of money if you think about it. If you do that math that means Genshin makes $330 million a year from banner sells alone!
-    </p>
-    <p>
-        Here is a graph that shows how much money Genshin has made with each verison patch all the way up to 4.0.
-    </p>
-    <div class="graph-container">
-        <canvas id="lineGraph"></canvas>
-      </div>
-    <p>
-        This would mean that the more time the character has appear in a banner, the more money the character has made overall. Here is are 2 graphs that showcasse the total amount of time that a character has reappear in a banner and the total they money they made since their release.
-    </p>
-    <div class="graph-container">
-        <canvas id="barGraph1"></canvas>
-      </div>
-      <div class="graph-container">
-        <canvas id="barGraph2"></canvas>
-      </div>
-    <p>
-        From these graph we can see that most character has made a appearanace in the limited banner for at least 3 time, and on avarage a character makes a total of $51.57 million.
-    </p>
-    <p>
-        This supports the claim since we can see that characters who has made an appearanace more than 3 times make more money than the avarage total a character would make. While characters who has made an apperance less than 3 times make less money than the avarage total a character would make.
-    </p>
-    <p>
-        This claim can be seen and heavily implied by the characters Tartaglia and Cyno.
-        <img class="Tartaglia" src="TartagliaChibi.png" alt="Chibi Tartaglia">
-        <img class="Cyno" src="CynoChibi.png" alt="Chibi Cyno">
-    </p>
-    <p>
-        Tartaglia has have 5 appearanaces on the 5-star limited banner and has made a total of $55,671,528.
-    </p>
-    <div class="graph-container">
-        <canvas id="tartagliaGraph1"></canvas>
-      </div>
-      <div class="graph-container">
-        <canvas id="tartagliaGraph2"></canvas>
-      </div>
-    <p>
-        While Cyno has only 2 appearanaces on the 5-star limited banner and only has made a total of $32,250,069.
-    </p>
-    <div class="graph-container">
-        <canvas id="cynoGraph1"></canvas>
-      </div>
-      <div class="graph-container">
-        <canvas id="cynoGraph2"></canvas>
-      </div>
-    <p>
-        This makes sense since the more times the character makes an appearance, the more chances the players have trying to get that character, which leads to spending more money since the character banner only lasts for a limited amount of days. 
-    </p>
-    <!--How revenue correlates with the abyss usuage number that a character has-->
-    <p>
-        Another way that 5-star characters correlates with Genshin Impact's banner revenue, is their usuage rate in Spriral Abyss. Here is a graph that shows the overall aravage abyss usuage rate of each limited 5-star character.
-    </p>
-    <div class="graph-container">
-        <canvas id="barGraph3"></canvas>
-      </div>
-    <p>
-        As we can see from the graph, characters with a higher avarage abyss usage rate (%38.10 or above) make more money than the avarage total, while a character with a lower avarage abyss usage rate (%38.10 or lower) would make less money than the avarage total.
-    </p>
-    <p>
-        This claim can be seen and heavily implied by the characters Kazuha and Eula.
-        <img class="Kazuha" src="KazuhaChibi.png" alt="Chibi Kazuha">
-        <img class="Eula" src="EulaChibi.png" alt="Chibi Eula">
-    </p>
-    <p>
-        Kazuha has an average usage rate of 75.9% making in total $52,075,519.
-    </p>
-    <div class="graph-container">
-        <canvas id="kazuhaGraph1"></canvas>
-      </div>
-      <div class="graph-container">
-        <canvas id="kazuhaGraph2"></canvas>
-      </div>
-    <p>
-        While Eula has an average usage rate of 11% and making in total $36,103,644.
-    </p>
-    <div class="graph-container">
-        <canvas id="eulaGraph1"></canvas>
-      </div>
-      <div class="graph-container">
-        <canvas id="eulaGraph2"></canvas>
-      </div>
-    <p>
-        This makes sense since higher usage rate requires the player to have the character to use it, which means some people would have to spend money to get the character.
-    </p>
-    <!--Conclusion-->
-    <p>
-        So then what should Genshin do in order to make more money? Well currently I believe there are currently two main changes they can do to increase their revenue.
-    </p>
-    <p>
-        The first option is for them to introduce triple banners, which means they have 3 limited 5-star banners running at the same time. This way the avarage waiting time would be lower, allowing the players to wait less to get the character that they want. Allowing them to have a chance to spend more money to get the character that they want.
-    </p>
-    <p>
-        The second option is giving updates and buffs to older characters in the game. This way character feels newer and nicer to play with, which will increase the character abyss usage rates, allowing more players to want that specific characters.
-    </p>
+   <!-- Introduction -->
+<p class="first-line">
+    Welcome, travelers, to the amazing world of Teyvat! Today, we'll journey through this land and explore how the limited 5-star characters in Genshin Impact affect the game's banner sales.
+</p>
+<p>
+    So, let’s find some more ways that Hoyoverse (the creator of Genshin Impact) can maximize their profit even more from their character banners by looking at all the 5-star character banners and Spiral Abyss patterns to see what they tell us.
+</p>
+
+<!-- How revenue correlates with how many times a character has made an appearance -->
+<p>
+    To start, did you know that on average each character banner makes roughly around $18.3 million, while only lasting for 20 days? That's a lot of money if you think about it. If you do the math, that means Genshin makes $330 million a year from banner sales alone!
+</p>
+<p>
+    Here is a graph that shows how much money Genshin has made with each version patch all the way up to version 4.0.
+</p>
+<div class="graph-container">
+    <canvas id="lineGraph"></canvas>
+</div>
+<p>
+    This would mean that the more time the character has appeared in a banner, the more money the character has made overall. Here are two graphs that showcase the total amount of time that a character has reappeared in a banner and the total amount of money they have made since their release.
+</p>
+<div class="graph-container">
+    <canvas id="barGraph1"></canvas>
+</div>
+<div class="graph-container">
+    <canvas id="barGraph2"></canvas>
+</div>
+<p>
+    From these graphs, we can see that most characters have made an appearance in the limited banner at least 3 times, and on average, a character makes a total of $51.57 million.
+</p>
+<p>
+    This supports the claim since we can see that characters who have made an appearance more than 3 times make more money than the average total a character would make, while characters who have made an appearance less than 3 times make less money than the average total a character would make.
+</p>
+<p>
+    This claim can be seen and heavily implied by the characters Tartaglia and Cyno.
+    <img class="Tartaglia" src="TartagliaChibi.png" alt="Chibi Tartaglia">
+    <img class="Cyno" src="CynoChibi.png" alt="Chibi Cyno">
+</p>
+<p>
+    Tartaglia has had 5 appearances on the 5-star limited banner and has made a total of $55,671,528.
+</p>
+<div class="graph-container">
+    <canvas id="tartagliaGraph1"></canvas>
+</div>
+<div class="graph-container">
+    <canvas id="tartagliaGraph2"></canvas>
+</div>
+<p>
+    While Cyno has only 2 appearances on the 5-star limited banner and has only made a total of $32,250,069.
+</p>
+<div class="graph-container">
+    <canvas id="cynoGraph1"></canvas>
+</div>
+<div class="graph-container">
+    <canvas id="cynoGraph2"></canvas>
+</div>
+<p>
+    This makes sense since if players have more chances to try to get a character, they are more likely to spend money because the banners only last a limited amount of days.
+</p>
+
+<!-- How revenue correlates with the Abyss usage number that a character has -->
+<p>
+    Another way that 5-star characters correlate with Genshin Impact's banner revenue is with their usage rate in Spiral Abyss. Here is a graph that shows the overall average abyss usage rate of each limited 5-star character.
+</p>
+<div class="graph-container">
+    <canvas id="barGraph3"></canvas>
+</div>
+<p>
+    As we can see from the graph, characters with a higher average abyss usage rate (38.10% or above) make more money than the average total, while a character with a lower average abyss usage rate (38.10% or lower) would make less money than the average total.
+</p>
+<p>
+    This claim can be seen and heavily implied by the characters Kazuha and Eula.
+    <img class="Kazuha" src="KazuhaChibi.png" alt="Chibi Kazuha">
+    <img class="Eula" src="EulaChibi.png" alt="Chibi Eula">
+</p>
+<p>
+    Kazuha has an average usage rate of 75.9%, making a total of $52,075,519.
+</p>
+<div class="graph-container">
+    <canvas id="kazuhaGraph1"></canvas>
+</div>
+<div class="graph-container">
+    <canvas id="kazuhaGraph2"></canvas>
+</div>
+<p>
+    While Eula has an average usage rate of 11% and has made a total of $36,103,644.
+</p>
+<div class="graph-container">
+    <canvas id="eulaGraph1"></canvas>
+</div>
+<div class="graph-container">
+    <canvas id="eulaGraph2"></canvas>
+</div>
+<p>
+    This makes sense since the character can only have a high usage rate because players actually have the character to be able to use. This would mean that some people would have to spend money to get that character.
+</p>
+
+<!-- How data might vary -->
+<p>
+    From the analysis that we have done so far, we can also see that both the number of appearances a character has on the limited banner and their Spiral Abyss usage rate affect their total revenue simultaneously.
+</p>
+<p>
+    If we go back and look at Kazuha, we can see that even though Kazuha had a high Spiral Abyss usage rate, he also only has 2 appearances on limited-time banners. Which shows both the Abyss usage rates and limited banner appearances affect the character's revenue simultaneously.
+</p>
+<p>
+    This is true because Kazuha doesn't have that high of a total revenue since he also has below-average Spiral Abyss usage rate. This means that he would only have the total revenue slightly above average because players haven't had that much of a chance to spend money and try to get him.
+</p>
+<p>
+    We can the opposite situation with Baizhu
+</p>
+<p>
+    Since 
+</p>
+<!-- Conclusion -->
+<p>
+    So then, what should Genshin do in order to make more money? Well, currently, I believe there are two main changes they can make to increase their revenue.
+</p>
+<p>
+    The first option is for them to introduce triple banners, which means they have 3 limited 5-star banners running at the same time. This way, the average waiting time would be lower, allowing the players to wait less to get the character that they want, allowing them to have a chance to spend more money to get the character that they want.
+</p>
+<p>
+    The second option is giving updates and buffs to older characters in the game. This way, characters feel newer and nicer to play with, which will increase the characters' Abyss usage rates, allowing more players to want that specific character.
+</p>
+
     <p class="blank">
 
     </p>
@@ -129,6 +153,7 @@
 <div class="image-container">
     <img class="Lumine-Idle" src="Lumine_Idle.GIF" alt="Lumine-Idle">
     <img class="Lumine-Run" src="Lumine_Run.GIF" alt="Lumine-Run">
+    <!-- <img class="Lumine-RunR" src="Lumine_Run.GIF" alt="Lumine-Run-Reverse"> -->
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="GenshinAnalysis.js"></script>

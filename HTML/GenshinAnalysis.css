@@ -1,227 +1,170 @@
+/*background image*/
 html {
-    /* Set background properties */
-    background-image: url('GenshinBackground.png'); /* Replace 'your-background-image-url.jpg' with your image URL */
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-}
-/*the fade in and out start button thingy*/
-.title p{
-    /* text-align: center; */
-    width: 700px;
-    font-size: x-large;
-    text-align: center;
-    color: beige;
-    margin-left: 67vh;
-    z-index: 9999999;
-}
-.title{
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20vh;
-    z-index: 9999999;
-}
-.title-button{
-    width:25%;
-    background-color: white;
-    border: solid 2px black;
-    border-radius: 200px;
-    transition: color 0.5s ,all 1s;
-    display: flex;
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    margin-left: 75vh;
-    z-index: 9999999;
-
-}
-.title-button:hover{
-    width:50%;
-    background-color: black;
-    color: white;
-    border: solid 2px black;
-    border-radius: 200px;
-    margin-left: 62.5vh;
-    z-index: 9999999;
-
-}
-.invisible, .hidden{
-    opacity: 0;
-    filter: blur(5px);
-    /* transform: translateX(100%); */
-    transition: all 2.5s;
-}
-.visible, .show{
-    opacity:1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-.fade-out {
-    opacity: 0;
-    transition: opacity 2s ease-out;
-}
-/*the text part*/
-.horizontal {
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden; /* Enable horizontal scrolling if necessary */
-}
-.horizontal p {
-    color: beige;
-    flex: 0 0 auto;
-    font-size: xx-large;
-    width: calc(50% - 20px); /* Adjust the width based on your preference */
-    margin-top: 20vh;
-    margin-left: 40vh;
-    margin-right: 40vh;
-}
-.horizontal .first-line{
-    margin-left: 50vh;
-}
-/*graphs*/
-.graph-container {
-    position: relative;
-    z-index: 5;
-    margin: 50px auto;
-    /* overflow: auto; */
+  /* Set background properties */
+  background-image: url('GenshinBackground.png'); /* Replace 'your-background-image-url.jpg' with your image URL */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   }
-  #lineGraph {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
+  .fullscreen-canvas {
+  display: block;
   }
-  #barGraph1 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
-    margin-right: 5vh;
+  /*animations*/
+  .invisible, .hidden{
+  opacity: 0;
+  filter: blur(5px);
+  /* transform: translateX(100%); */
+  transition: all 2.5s;
   }
-  #barGraph2 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
+  .visible, .show{
+  opacity:1;
+  filter: blur(0);
+  transform: translateX(0);
   }
-  #tartagliaGraph1 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
-    margin-right: 5vh;
+  .fade-out {
+  opacity: 0;
+  transition: opacity 2s ease-out;
   }
-  #tartagliaGraph2 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
+  /* the fade in and out start button thingy */
+  .title p{
+  /* text-align: center; */
+  width: 80vw;
+  font-size: x-large;
+  text-align: center;
+  color: beige;
+  z-index: 9999999;
   }
-  #cynoGraph1 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
-    margin-right: 5vh;
+  .title{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-left:15vw;
+  z-index: 9999999;
   }
-  #cynoGraph2 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
+  .title-button{
+  width:35%;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 200px;
+  transition: color 0.5s ,all 1s;
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  margin-left: 27vw;
+  z-index: 9999999;
+  
+  
   }
-  #barGraph3 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
+  .title-button:hover{
+  width:50%;
+  background-color: black;
+  color: white;
+  border: solid 2px black;
+  border-radius: 200px;
+  margin-left: 20vw;
+  z-index: 9999999;
+  
+  
   }
-  #kazuhaGraph1 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
-    margin-right: 5vh;
+  /*the text part*/
+  .horizontal {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden; /* Enable horizontal scrolling if necessary */
   }
-  #kazuhaGraph2 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
+  .horizontal p {
+  color: beige;
+  flex: 0 0 auto;
+  font-size: xx-large;
+  width: 60vw;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   }
-  #eulaGraph1 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
-    margin-right: 5vh;
+  .horizontal .first-line{
+  margin-left: 10%;
   }
-  #eulaGraph2 {
-    position: relative;
-    border: 1px solid #fff;
-    width: 1900px; 
-    height: 1400px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);    /* display: block; */
+  /*graphs*/
+  .graph-container {
+  position: relative;
+  z-index: 5;
+  /* margin: 50px auto; */
+  /* overflow: auto; */
   }
-/*extra stickers*/
-.Tartaglia{
-    margin-left: 20vh;
-    width: 100px;
-    Height:100px;
-}
-.Cyno{
-    margin-left: 10vh;
-    width: 100px;
-    Height:100px;
-}
-.Kazuha{
-    margin-left: 20vh;
-    width: 100px;
-    Height:100px;
-}
-.Eula{
-    margin-left: 10vh;
-    width: 100px;
-    Height:100px;
-}
-
-/*Lumine running animations*/
-.Lumine-Idle{
-    position: fixed;
-    z-index: 99;
-    /* margin-top: 10vh; */
-    margin-left: 15vh;
-    width: 600px;
-    height: 600px;
-}
-.Lumine-Run{
-    position: fixed;
-    z-index: 99;
-    /* margin-top: 10vh; */
-    margin-left: 15vh;
-    width: 600px;
-    height:600px;
-}
+  #lineGraph,
+  #barGraph2,
+  #tartagliaGraph2,
+  #cynoGraph2,
+  #barGraph3,
+  #kazuhaGraph2,
+  #eulaGraph2{
+  position: relative;
+  border: 1px solid #fff;
+  width: 75vw;
+  height: 50vh;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.75); /* display: block; */
+  }
+  #barGraph1,
+  #tartagliaGraph1,
+  #cynoGraph1,
+  #kazuhaGraph1,
+  #eulaGraph1{
+  position: relative;
+  border: 1px solid #fff;
+  width: 75vw;
+  height: 50vh;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.75); /* display: block; */
+  margin-right: 5vh;
+  }
+  /*extra stickers*/
+  .Tartaglia,
+  .Cyno,
+  .Kazuha,
+  .Eula{
+  margin-left: 16vw;
+  width: 6vw;
+  Height:8vh;
+  }
+  /*Lumine running animations*/
+  .Lumine-Idle,
+  .Lumine-Run{
+  position: fixed;
+  z-index: 99;
+  /* margin-top: 10vh; */
+  margin-left: 10%;
+  width: 23.4vw;
+  height: 37.5vh;
+  }
+  /*if phone is in potrait mode*/
+  /* Hide the message by default */
+  .portrait-message {
+  display: none;
+  }
+  
+  
+  /* Media query for portrait mode */
+  @media screen and (orientation: portrait) {
+  body {
+  overflow: hidden; /* Prevent scrolling on portrait mode */
+  }
+  
+  
+  .portrait-message {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+  z-index: 9999;
+  }
+  }
+  
+  
